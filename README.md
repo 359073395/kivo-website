@@ -1,6 +1,6 @@
 # Kivo 官网
 
-官网地址为 [359073395.github.io/kivo-website](https://359073395.github.io/kivo-website/)。
+官网地址为 [kivo.lihengwei.eu.org](https://kivo.lihengwei.eu.org/)。
 
 ## GitHub Pages
 
@@ -14,7 +14,7 @@ npm ci
 npm run build:pages
 ```
 
-生成的完整静态站点位于 `out/`，使用 Next.js 静态导出构建。默认部署路径为 `/kivo-website`，
+生成的完整静态站点位于 `out/`，使用 Next.js 静态导出构建。默认部署到自定义域名根目录，
 工作流会从 GitHub Pages 设置读取实际路径和地址。
 独立构建时也可以通过 `PAGES_BASE_PATH` 和 `PAGES_BASE_URL` 环境变量指定。
 
