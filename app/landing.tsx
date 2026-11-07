@@ -1,4 +1,5 @@
-import { Workflow, ProductPreview, MobileNav } from "./site-interactions";
+import { ProductPreview, MobileNav } from "./site-interactions";
+import { ScrollStory, MotionEffects } from "./scroll-story";
 
 const repository = "https://github.com/359073395/Kivo";
 const release = `${repository}/releases/tag/v0.3.1`;
@@ -36,35 +37,35 @@ export default function Landing() {
           <div className="hero-wash" aria-hidden="true" />
           <aside
             className="floating-note source-note"
-            aria-label="知识方法示例"
+            aria-label="热点选题示例"
           >
             <div className="note-heading">
-              <span className="tiny-icon">▤</span> 从知识里找线索{" "}
-              <span>方法示例</span>
+              <span className="tiny-icon">↗</span> 热点雷达{" "}
+              <span>选题示例</span>
             </div>
             <p>
-              先找到读者
+              周末城市漫步
               <br />
-              真正关心的问题
+              日常，也有新鲜视角
             </p>
             <div className="note-rule" />
             <small>
-              人群定位 <span>·</span> 选题方法
+              微博 <span>·</span> 抖音 <span>·</span> 知乎
             </small>
           </aside>
           <div className="hero-content">
             <p className="eyebrow">
-              <span className="status-dot" /> 本地知识驱动的创作工作台
+              <span className="status-dot" /> 从热点到作品，一站式创作工作台
             </p>
             <h1 id="hero-title">
-              把你的积累，
+              从一个好选题，
               <br />
-              写进下一次<span className="title-accent">创作</span>。
+              到一份<span className="title-accent">好内容</span>。
             </h1>
             <p className="hero-description">
-              连接你的资料、方法与灵感。从选题到成稿，
+              发现热点、策划选题、制作内容、准备发布，
               <br />
-              让创作有据可循，让经验持续生长。
+              让你的知识与经验，参与每一步创作。
             </p>
             <div className="hero-actions">
               <a className="button button-dark" href="#download">
@@ -75,6 +76,45 @@ export default function Landing() {
               </a>
             </div>
           </div>
+          <aside
+            className="floating-note calendar-note"
+            aria-label="内容排期示例"
+          >
+            <div className="note-heading">
+              内容日历 <span>排期示例</span>
+            </div>
+            <div className="hero-calendar-row">
+              <b>周二</b>
+              <span>城市漫步 · 图文</span>
+            </div>
+            <div className="hero-calendar-row">
+              <b>周四</b>
+              <span>街角光线 · 视频</span>
+            </div>
+            <div className="hero-calendar-row">
+              <b>周日</b>
+              <span>一周内容复盘</span>
+            </div>
+          </aside>
+          <aside
+            className="floating-note knowledge-note"
+            aria-label="知识辅助创作"
+          >
+            <div className="note-heading">
+              带着知识创作 <span>本地知识库</span>
+            </div>
+            <p>
+              你的方法与经验，
+              <br />
+              在需要时派上用场。
+            </p>
+            <div className="note-footer">
+              <span>
+                <i /> 来源可追溯
+              </span>
+              <span aria-hidden="true">▤</span>
+            </div>
+          </aside>
           <aside className="floating-note draft-note" aria-label="创作片段示例">
             <div className="note-heading">
               下一篇内容 <span>成稿示例</span>
@@ -94,42 +134,72 @@ export default function Landing() {
             </div>
           </aside>
           <div className="hero-footnote">
-            <span>Windows 桌面端</span>
-            <span>自选模型 API</span>
-            <span>知识与作品保存在本机</span>
+            <a href="#workflow">
+              滚动探索完整工作流 <span aria-hidden="true">↓</span>
+            </a>
+            <MotionEffects />
           </div>
         </section>
-        <section
-          id="workflow"
-          className="workflow-section"
-          aria-labelledby="workflow-title"
-        >
-          <div className="section-heading">
-            <p className="eyebrow">创作工作流</p>
-            <h2 id="workflow-title">好内容，从已有的积累开始。</h2>
-            <p>让资料走进创作，也让每一次创作留下经验。</p>
+        <div className="product-overview" aria-label="Kivo 创作能力概览">
+          <div>
+            <strong>6</strong>
+            <span>平台热榜来源</span>
           </div>
-          <Workflow />
-        </section>
+          <div>
+            <strong>选题 + 日历</strong>
+            <span>收藏灵感，规划内容节奏</span>
+          </div>
+          <div>
+            <strong>114</strong>
+            <span>内置创作技能</span>
+          </div>
+          <div>
+            <strong>本地知识</strong>
+            <span>资料、方法与反馈持续积累</span>
+          </div>
+        </div>
+        <ScrollStory />
         <section
           id="capabilities"
           className="capabilities-section"
           aria-labelledby="capabilities-title"
         >
           <div className="capabilities-intro">
-            <p className="eyebrow">为持续创作而准备</p>
+            <p className="eyebrow">日常创作，也照顾每一个细节</p>
             <h2 id="capabilities-title">
-              你的知识，
+              灵感有去处，
               <br />
-              有了更顺手的用法。
+              创作有方法。
             </h2>
             <p>
-              从日常收集的资料，到你已经验证的方法，
+              把热点、选题、内容和反馈连接起来，
               <br />
-              在一个工作台里连接起来。
+              也把你的积累带进整个过程。
             </p>
           </div>
           <div className="capability-list">
+            <article>
+              <span className="capability-symbol" aria-hidden="true">
+                ↗
+              </span>
+              <div>
+                <h3>热点雷达与选题库</h3>
+                <p>
+                  聚合多个平台的热榜线索，收藏灵感、记录来源，推进到创作与排期。热榜获取依赖对应数据源和网络连接。
+                </p>
+              </div>
+            </article>
+            <article>
+              <span className="capability-symbol" aria-hidden="true">
+                ▦
+              </span>
+              <div>
+                <h3>对标拆解与内容日历</h3>
+                <p>
+                  拆解内容的钩子与结构，整理可用的选题方向，再把草稿、待发内容与活动节点排进日历。
+                </p>
+              </div>
+            </article>
             <article>
               <span className="capability-symbol" aria-hidden="true">
                 ⌕

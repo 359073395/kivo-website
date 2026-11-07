@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import "./site.css";
+import "./motion.css";
 
 export const metadata: Metadata = {
   title: "Kivo · 让每次创作，都有知识可依",
   description:
-    "Kivo 是本地知识驱动的创作工作台。连接资料、方法与灵感，让知识检索、资料学习、内容创作和反馈复盘在一起。",
+    "Kivo 一站式创作工作台，连接热点雷达、选题策划、内容制作、发布准备与反馈复盘，让本地知识参与每一步创作。",
   metadataBase: new URL(
     "https://kivo-creative-workspace.lhwharvey.chatgpt.site",
   ),
   openGraph: {
     title: "Kivo · 创作工作台",
-    description: "把你的积累，写进下一次创作。",
+    description: "从一个好选题，到一份好内容。",
     locale: "zh_CN",
     type: "website",
   },
