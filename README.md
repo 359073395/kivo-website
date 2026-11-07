@@ -1,4 +1,27 @@
-# vinext-starter
+# Kivo 官网
+
+官网地址为 [359073395.github.io/kivo-website](https://359073395.github.io/kivo-website/)。
+
+## GitHub Pages
+
+推送 `main` 分支后，GitHub Actions 自动安装依赖、检查类型、构建静态页面并部署。
+部署进度可在仓库的 Actions 页面查看。
+
+本地构建需要 Node.js 24，执行以下命令。
+
+```sh
+npm ci
+npm run build:pages
+```
+
+生成的完整静态站点位于 `out/`，使用 Next.js 静态导出构建。默认部署路径为 `/kivo-website`，
+工作流会从 GitHub Pages 设置读取实际路径和地址。
+独立构建时也可以通过 `PAGES_BASE_PATH` 和 `PAGES_BASE_URL` 环境变量指定。
+
+页面内容位于 `app/landing.tsx`，滚动交互位于 `app/scroll-story.tsx`，
+图片位于 `public/images/`。修改后提交并推送即可更新官网。
+
+## Sites 开发环境
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 

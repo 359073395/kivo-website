@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, type KeyboardEvent } from "react";
+import { basePath } from "./site-config";
 
 function moveTab(
   event: KeyboardEvent<HTMLButtonElement>,
@@ -55,17 +56,17 @@ export function MobileNav() {
 const screenshots = [
   {
     label: "知识检索",
-    src: "/images/knowledge-desktop.png",
+    src: `${basePath}/images/knowledge-desktop.png`,
     description: "检索知识、查看来源，并将方法用于当前创作。",
   },
   {
     label: "资料学习",
-    src: "/images/learning-desktop.png",
+    src: `${basePath}/images/learning-desktop.png`,
     description: "保留原文与出处，确认需要采用的新方法。",
   },
   {
     label: "反馈复盘",
-    src: "/images/feedback-learning.png",
+    src: `${basePath}/images/feedback-learning.png`,
     description: "记录作品版本和反馈，为下一次改进积累线索。",
   },
 ];

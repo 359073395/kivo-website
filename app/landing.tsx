@@ -1,5 +1,6 @@
 import { ProductPreview, MobileNav } from "./site-interactions";
 import { ScrollStory, MotionEffects } from "./scroll-story";
+import { basePath } from "./site-config";
 
 const repository = "https://github.com/359073395/Kivo";
 const release = `${repository}/releases/tag/v0.3.1`;
@@ -12,7 +13,12 @@ export default function Landing() {
       </a>
       <header className="site-header">
         <a className="brand" href="#" aria-label="Kivo 首页">
-          <img src="/images/kivo-icon.png" width="40" height="40" alt="" />
+          <img
+            src={`${basePath}/images/kivo-icon.png`}
+            width="40"
+            height="40"
+            alt=""
+          />
           <span>Kivo</span>
           <small>创作工作台</small>
         </a>
@@ -290,7 +296,12 @@ export default function Landing() {
           className="download-section"
           aria-labelledby="download-title"
         >
-          <img src="/images/kivo-icon.png" width="72" height="72" alt="" />
+          <img
+            src={`${basePath}/images/kivo-icon.png`}
+            width="72"
+            height="72"
+            alt=""
+          />
           <p className="eyebrow">开始你的下一次创作</p>
           <h2 id="download-title">
             带上积累，
@@ -380,7 +391,12 @@ export default function Landing() {
       </main>
       <footer className="site-footer">
         <a className="brand" href="#">
-          <img src="/images/kivo-icon.png" width="32" height="32" alt="" />
+          <img
+            src={`${basePath}/images/kivo-icon.png`}
+            width="32"
+            height="32"
+            alt=""
+          />
           <span>Kivo</span>
         </a>
         <p>让每次创作，都有知识可依。</p>
