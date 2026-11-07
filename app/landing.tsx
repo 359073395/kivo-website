@@ -3,7 +3,7 @@ import { ScrollStory, MotionEffects } from "./scroll-story";
 import { basePath } from "./site-config";
 
 const repository = "https://github.com/359073395/Kivo";
-const release = `${repository}/releases/tag/v0.3.1`;
+const release = `${repository}/releases/latest`;
 
 export default function Landing() {
   return (
@@ -321,10 +321,7 @@ export default function Landing() {
           >
             前往 Windows 下载页 <span aria-hidden="true">↗</span>
           </a>
-          <p className="release-note">公开下载 v0.3.1 · Windows 10 / 11 x64</p>
-          <p className="release-detail">
-            v0.3.3 已完成本机验证，公开下载以 GitHub 发布页为准。
-          </p>
+          <p className="release-note">最新正式版 · Windows 10 / 11 x64</p>
           <div className="download-links">
             <a
               href={`${repository}/blob/main/README-Kivo.md`}

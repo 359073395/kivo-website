@@ -582,12 +582,6 @@ figcaption {
   color: #778085;
   margin-top: 17px;
 }
-.release-detail {
-  font-size: 10px;
-  color: #7c8588;
-  line-height: 1.8;
-  margin-top: 8px;
-}
 .download-links {
   display: flex;
   justify-content: center;
@@ -1026,9 +1020,6 @@ figcaption {
   }
   .release-note {
     font-size: 10px;
-  }
-  .release-detail {
-    font-size: 9px;
   }
   .download-links {
     font-size: 11px;
